@@ -1,0 +1,31 @@
+**** Buscar de forma automatica vulnerabilidades host ****
+
+https://github.com/21y4d/nmapAutomator
+
+### Comando ####
+
+./nmapAutomator.sh 192.168.x.x Full 
+
+**** Update Vulnerabilidades Nmap ****** 
+
+https://github.com/scipag/vulscan
+
+hay que copir los archivos a /usr/share/nmap/scripts/ crear la carpeta vulscan
+
+### Comando ####
+
+nmap -sv --script=vulscan/vulscan.nse 192.168.x.x
+
+Buscar nombre de directorios comunes con dirb
+
+dirb http://192.168.x.x:PORT /usr/share/dirb/wordlists/common.txt
+
+otra opcion es uniscan -q discovery web -we busca robots.txt 
+
+uniscan -u 192.168.x.x -q 
+
+
+
+
+
+https://github.com/Lifka/hacking-resources/blob/main/hacking-web-cheat-sheet.md
